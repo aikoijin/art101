@@ -2,7 +2,6 @@
 
 .pfp-photo {
   margin: 10px;
+  float: right;
   max-height: 200px;
-  display: flex;
-  align-items: center;
 }
