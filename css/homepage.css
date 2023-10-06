@@ -3,5 +3,27 @@
 .pfp-photo {
   margin: 10px;
   float: right;
-  max-height: 200px;
+  max-width: 350px;
+}
+
+.lab-links {
+  float: right;
+  margin-top: 50px;
+  margin-right: 90px;
+}
+
+.bio {
+  margin-top: 125px;
+}
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
