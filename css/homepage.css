@@ -3,5 +3,6 @@
 .pfp-photo {
   margin: 10px;
   max-height: 350px;
+  display: flex;
   align-items: center;
 }
