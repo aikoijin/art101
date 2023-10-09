@@ -20,10 +20,10 @@ h1 {
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 50px;
+  margin: 20px;
   padding: 20px;
   border: solid 5px #ffcc04;
-  background-color: #bbbbbb;
+  background-color: #f6f6f6;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
