@@ -23,7 +23,7 @@ h1 {
   margin: 50px;
   padding: 20px;
   border: solid 5px #ffcc04;
-  background-color: #000000;
+  background-color: #bbbbbb;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
