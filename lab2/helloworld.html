@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab2.css">
+	<!-- Link to javascript file - DEFER waits until all elements are rendered deleted from template: type="text/javascript" -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" intergrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 2 - HTML & CSS Starter</title>
+    	<!-- aligning photo with text? https://www.geeksforgeeks.org/how-to-vertically-align-text-next-to-an-image-using-css/ -->
+	<style>
+        .interest {
+            display: flex;
+            align-items: center;
+        }
+          
+        span {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center; font-size: 100px; font-weight: lighter;"></text>Hello World</h1>
+    <main id="content">
+    <div class="row">
+        <div class="column">
+            <div class ="info">
+            <p style="text-align:left;"> We are Ashley Pham and Michelle Wang.<br />
+                <br />
+                My name is Michelle Wang and I am a junior majoring in B.A. Game Design and Playable Media at UC Santa Cruz.
+                My favorite games to play are Teamfight Tactics and League of Legends <i>(your average Nami main and Teemo Memer)</i>.<br />
+                <br />
+                My name is Ashley Pham and I am a senior majoring in Computer Science at UC Santa Cruz. 
+                My favorite game to play right now is Maplestory and Baluder's Gate.
+                My favorite color is yellow and my favorite cheese is mozzarella. 
+            </p>
+            </div>
+        </div>
+        <div class="column">
+            <div class ="likes">
+                <p style="text-align:left;">We share common interests such as:<br />
+                        <div class="row">
+                            <div class="column">Playing Games
+                            <a href="https://signup.leagueoflegends.com/en-us/signup/redownload" target="_new"><img class ="interest" src="./img/Gamer.png" alt ="GAMES" /></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="column">Eating Dim Sum
+                            <a href="https://www.specialnoodle-santacruz.com/menu/?utm_source=NTDdigital&utm_medium=cpc&gclid=Cj0KCQjwj5mpBhDJARIsAOVjBdok1w4kH_UfB-HGbixJmK_MFczRFkimfMsKqBhpbvOkFAxTq1v9AJ4aAh6QEALw_wcB" target="_new"><img class ="interest" src="./img/DimSum.jpg" alt ="DIM SUM" /></a></div>
+                        </div>
+                        <div class="row">
+                            <div class="column">Having Pets
+                            <a href="https://www.akc.org/dog-breeds/" target="_new"><img class ="interest" src="./img/Pets.jpg" alt ="PETS" /></a></div>
+                        </div>
+                    </div>
+ 
+                </p>
+            </div>
+        </div>
+        <section>
+			<div class="minor-section">
+					<h2>Challenge</h2>
+					<p>One of the challenges of this lab was realizing that we were suppose to build on top of index.html and not make a new one.
+                        However we already spent a good amount of time on the helloworld.html that we didn't want to lose our progress so as a result
+                        we just added the questions to the end of our webpage. In addition, just learning HTML and CSS in general trying out new things
+                        rather than just doing the bare minimum.
+                    </p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Problems</h2>
+					<p>We wanted to do so many new things in terms of formatting, using a custom font, making 2 column texts, and even clickable images
+                        that could send the user to a relevant website regarding our common interests. We used the lecture recordings to handle the
+                        clickable images but had to do research to try to learn how to do 2-column texts and change the font style. 
+                        Personally I, Michelle, struggled with trying to add the font and spent a majority of my time going through many websites: W3Schools,
+                        WikiHow, Programiz, PageCloud, and even Stack Overflow. In the end, I realized that the reason why my font wouldn't appear was because
+                        my directory to it was wrong. I had to add ../ in front of my LoversQuarrel.ttf to have it go back to the lab2 folder to search for it not
+                        inside the helloworld.html file.  </p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Reflection</h2>
+					<p>In the beginning it was easy and managable except for the index.html confusion we had and also realizing last minute that index.html had some
+                        responses that we needed to answer and as a result we scrambled to add this in but we finished the website in time.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Results</h2>
+					<div id="output"></div>
+			</div>
+		</section>
+    </div>
+    </main>
+</body>
+</html>

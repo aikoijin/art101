@@ -1,0 +1,64 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+@font-face {
+font-family: "LoversQuarrel";
+src: url("../LoversQuarrel.ttf") format("truetype")
+}
+
+h1{
+font-family: "LoversQuarrel";
+color: white;
+margin: 50px;
+}
+
+body {
+  background-color: lavender;
+}
+
+.interest {
+  margin-bottom: 10px;
+  width:150px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+#content {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border: solid 3px #ffcc04;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.info {
+  float: left;
+  margin-left: 50px;
+  max-width: 70%
+}
+
+.likes {
+  float: left;
+  margin-left: 50px;
+  max-width: 70%
+}
+
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.minor-section {
+text-align: center;
+}
+

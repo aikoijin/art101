@@ -20,12 +20,9 @@ h1 {
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 400px;
-  margin-right: 400px;
-  border-radius: 15px;
-  padding: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
   border: solid 3px #ffcc04;
   background-color: #ffffff;
 }
