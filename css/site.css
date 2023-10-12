@@ -7,15 +7,47 @@ body {
   background-color: #f4f4f4;
 }
 
+@font-face {
+  font-family: "LoversQuarrel";
+  src: url("../lab2/LoversQuarrel.ttf") format("truetype")
+  }
+@font-face {
+  font-family: "BriosoPro";
+  src: url("../lab2/BriosoPro.ttf") format("truetype")
+  }
+
+@font-face {
+  font-family: "Aviano";
+  src: url("../lab2/Aviano.ttf") format("truetype")
+  }
+
+@font-face {
+  font-family: "BELL";
+  src: url("../lab2/BELL.TTF") format("truetype")
+  }
+
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: Arial, Helvetica, sans-serif;
+h1{
+  font-family: "Aviano";
+  word-spacing: 5px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-/* and we can have rules that overlap other rules, both take effect */
-h1 {
-  word-spacing: 5px;
-  font-size: 200%;
+h2{
+  font-family: "BELL";
+  font-size: 20px;
+  margin: 0px
+}
+
+p{
+  font-family: "BriosoPro";
+  font-size: 20px;
+}
+
+a {
+  color: plum;
+  text-decoration: none;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
