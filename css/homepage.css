@@ -1,0 +1,46 @@
+/* this css file will only style the homepage of our site */
+
+body {
+  background-color: lavender;
+}
+
+#content {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.pfp-photo {
+  margin: 20px;
+  float: right;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.lab-links {
+  float: right;
+  margin-top: 20px;
+  margin-right: 120px;
+}
+
+.lab {
+  float: left;
+  margin-left: -20px;
+}
+
+.bio {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
