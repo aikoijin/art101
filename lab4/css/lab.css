@@ -3,7 +3,6 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .pseudocode {
     padding: 10px;
-    margin-bottom: 10px;
     /* width: fit-content; */
     background-color: black;
   }
@@ -16,12 +15,12 @@
 /* Help with positioning code on black bg by Gabe da Silva */
 .pseudocode code {
   position: relative;
-  left: -400px;
+  left: -410px;
+  bottom: 30px;
   color: #149414;
   font-family: "Consolas";
   margin: 0;
   padding: 0;
-
 }
 
 #content {
@@ -30,5 +29,4 @@
   padding: 10px;
   border: solid 3px #ffcc04;
   background-color: #ffffff;
-
 }
