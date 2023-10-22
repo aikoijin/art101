@@ -57,6 +57,7 @@ a {
   padding: 10px;
   border: solid 3px #ffcc04;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .home {
@@ -65,3 +66,7 @@ a {
   width:150px;
   height:50px;
   }
+
+body {
+  background-color: lavender;
+}
