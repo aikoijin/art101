@@ -1,9 +1,38 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+#content {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  border: solid 3px pink;
+  background-color: #ffffff;
+}
+
+.photo {
+  float: left;
+  max-height: 100px;
+  border-radius: 10px;
+}
+
+.output {
+  background-color: black;
+  color: #149414;
+  font-family: "Consolas";
+  width: 50%;
+  margin: 10 px;
+  padding: 10px;
+}
+
+/* https://www.w3schools.com/howto/howto_css_three_columns.asp */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
