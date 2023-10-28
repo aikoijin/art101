@@ -19,8 +19,7 @@
   background-color: black;
   color: #149414;
   font-family: "Consolas";
-  width: 50%;
-  margin: 10 px;
+  width: fit-content;
   padding: 10px;
 }
 

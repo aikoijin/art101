@@ -5,20 +5,19 @@
   margin: auto;
   width: 60%;
   padding: 10px;
-  border: solid 3px #ffcc04;
+  border: solid 3px pink;
   background-color: #ffffff;
 }
 
 .photo {
-  float: left;
   max-width: 300px;
   border-radius: 10px;
 }
 
 .output {
-  position: relative;
-  left: -100px;
-  bottom: -75px;
-  margin: 0;
-  padding: 0;
+  background-color: black;
+  color: #149414;
+  font-family: "Consolas";
+  width: fit-content;
+  padding: 10px;
 }
