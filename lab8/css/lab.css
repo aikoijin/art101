@@ -9,10 +9,11 @@
   background-color: #ffffff;
 }
 
-.output img {
-  max-width: 100px;
+.anon {
+  max-width: 200px;
 position: relative;
 top: 15px;
+left: 40px;
 }
 .output p {
   background-color: black;
