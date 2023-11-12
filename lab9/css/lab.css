@@ -9,6 +9,13 @@
   background-color: #ffffff;
 }
 
+.special {
+  background-color: lavender;
+  border: dotted 5px white;
+  color: pink;
+  font-weight: bold;
+}
+
 .output img {
   max-width: 100px;
 position: relative;

@@ -1,27 +1,74 @@
-// index.js - Learn and practice anonymous functions and callbacks in JS
+// index.js - Using jQuery, create buttons to add to the challenge, problems, and results sections of your document
 // Author: Michelle Wang
-// Date:11/3/2023
+// Date:11/6/2023
 
-// this is an example function and this comment tells what it does and what parameters are passed to it.
-function mySquare(x){
-    var results = x * x;
-    return results;
-}
+// Add toggle class button to challenge
+// $("#challenge").append("<button id='lab-toggle-button'>Click Here!<button>");
 
-//test function
-console.log("The square of 10 is: ", mySquare(10));
-console.log("The square of 124 is: ", mySquare(124));
+// // Add a click listener to the toggle Class button
+// $("#lab-toggle-button").click(function(){
+//     $("#challenge").toggleClass(".special");
+//     //result when clicked
+//     $("#challenge").html("Congrats! You clicked it!")
+// });
 
-array = [129,41,432,8593,291]
-console.log("My array: ", array);
+//add toggle class button to problem
+//$
 
-var result = array.map(mySquare);
-console.log("Test of squares of array: ", result);
 
-var result = array.map(function(x){
-    var results = x%2 == 0;
-    return results;
-})
+// ==========================================================================================
 
-//output for eveness (true or false)
-console.log("Eveness of array: ", result);
+
+// // adding button
+// $("#challenge").append("<button id='lab-toggle-button'>CLICK HERE!!<button>");
+
+// // listening 
+// $("#lab-toggle-button").click(function(){
+//   // append paragraph
+//   $("#challenge").append("<p>The challenge of the lab was to experiment with jQuery and make buttons that have an action when clicked.</p>");
+// });
+
+// // add toggle button
+// $("#problems").append("<button id='problems-toggle-button'>PRESS ME!!<button>");
+
+// // listener for problem
+// $("#problems-toggle-button").click(function(){
+//     // appends paragraph
+//     $("#problems").append(`<p>Some problems that came up was getting the buttons to do something. I managed to get challenge to click and then show a message.
+//     For the other buttons I decided to change the color of the section similar to the professor's website "highlight". This proved difficult at
+//     first but after looking over the JS and understanding how it works, it was easier. I also decided to try doing a collapsible button for one of my
+//     sections and used W3schools to incorporate it into my code.</p>`);
+// });
+
+// // result button
+// $("#results").append("<button id='results-toggle-button'>Click here to reveal our results!<button>");
+
+// // result listener
+// $("#results-toggle-button").click(function(){
+//     // appends paragraph
+//     $("#results").append("<p>You can see the results if you click the button that says 'Click Here' in the challenge section. I also decided to change the section backgrounds to test out other button functions. </p>");
+// });
+
+//TASK X: BONUS
+$("#challenge, #problems, #results").addClass("special-sections");
+
+$(".special-sections").append("<button class='toggle-button'>Click Here!</button>");
+
+$(".special-sections button").click(function(){
+    var sectionId = $(this).parent().attr('id');
+    var paragraphText = "";
+
+    if (sectionId === "challenge") {
+        paragraphText = "The challenge of the lab was to experiment with jQuery and make buttons that have an action when clicked.";
+    } else if (sectionId === "problems") {
+        paragraphText = `Some problems that came up was getting the buttons to do something. I managed to get challenge to click and then show a message.
+        For the other buttons I decided to change the color of the section similar to the professor's website "highlight". This proved difficult at
+        first but after looking over the JS and understanding how it works, it was easier. I also decided to try doing a collapsible button for one of my
+        sections and used W3schools to incorporate it into my code.`;
+    } else if (sectionId === "results") {
+        paragraphText = "You can see the results if you click the button that says 'Click Here' in the challenge section. I also decided to change the section backgrounds to test out other button functions.";
+    }
+
+    // appends a new paragraph to the parent section when clicked
+    $(this).parent().append("<p>" + paragraphText + "</p>");
+});
