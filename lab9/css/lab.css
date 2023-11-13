@@ -9,36 +9,11 @@
   background-color: #ffffff;
 }
 
-.special {
+.toggle-button {
   background-color: lavender;
-  border: dotted 5px white;
-  color: pink;
+  border: dotted 4px pink;
+  color: white;
   font-weight: bold;
-}
-
-.output img {
-  max-width: 100px;
-position: relative;
-top: 15px;
-}
-.output p {
-  background-color: black;
-  color: #149414;
-  font-family: "Consolas";
-  width: fit-content;
-  font-size: medium;
-  padding: 10px;
-}
-
-/* https://www.w3schools.com/howto/howto_css_three_columns.asp */
-.column {
-  float: left;
-  width: 33.33%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding: 5px;
+  margin: 0px;
 }
