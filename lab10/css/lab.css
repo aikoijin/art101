@@ -3,7 +3,7 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 #content {
   margin: auto;
-  width: 90%;
+  width: 70%;
   padding: 10px;
   border: solid 3px pink;
   background-color: #ffffff;
@@ -27,7 +27,7 @@
 
 .text-left {
   display: inline-block;
-  max-width: 60%;
+  max-width: 55%;
   margin: 3px;
   padding: 5px;
   border-radius: 15px;
@@ -40,7 +40,7 @@
 
 .text-right {
   display: inline-block;
-  max-width: 60%;
+  max-width: 55%;
   margin: 3px;
   padding: 5px;
   border-radius: 15px;
