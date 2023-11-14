@@ -14,11 +14,12 @@ function generateRandomText() {
 }
 
 const sentences = [
-  "I don't understand what you're saying...",
-  "What???",
-  "I'm confused...",
-  "Is there a translator nearby?",
-  "Huh?"
+  "SMS SERVICE ERROR 305: Message delivery failed. Further messages will be deducted from your account’s balance.",
+  "Msg 2110: The customer you are trying to text is temporarily out of service.",
+  "Service Error 409: The subscriber you are trying to reach has blocked all incoming text messages from this number.",
+  "Error: Your SMS has not been delivered: The recipient has blocked you. Please, try again after 24 hours.",
+  "Error 65487 346: Your message failed to send to this recipient. Please try again later or visit www.stoptextingme.com.",
+  "Free Msg. Service: Unable to send the message. The recipient has activated message blocking."
 ];
 
 function randReply() {
@@ -36,5 +37,6 @@ $("#make-convo").click(function(){
   } else {
     $("#output").append('<div class="text-right"><p>' + newReply + '</p></div>');
   }
+  $("#output").append('<div style="clear: both;"></div>');
   isLeft = !isLeft;
 });
