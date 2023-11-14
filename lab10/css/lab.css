@@ -1,0 +1,59 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+#content {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  border: solid 3px pink;
+  background-color: #ffffff;
+  height:auto;
+  overflow:auto;
+}
+
+#output {
+  background-color: white;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  border: solid 1px black;
+  min-height: 100px;
+}
+
+.text-left {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: darkgray;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  float: left;
+  clear: both;
+}
+
+.text-right {
+  display: inline-block;
+  max-width: 60%;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #147efb;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  float: right;
+  clear: both;
+}
+
+.make-convo {
+  background-color: lavender;
+  border: dashed 3px pink;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0px;
+}

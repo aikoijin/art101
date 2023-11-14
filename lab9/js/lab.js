@@ -18,6 +18,10 @@
 
 // ==========================================================================================
 
+// //toggle visibility testing 11/13 class; WORKS
+// $("#make-hide").click(function(){
+//     $("#challenge").toggleClass("hidden");
+// });
 
 // // adding button
 // $("#challenge").append("<button id='lab-toggle-button'>CLICK HERE!!<button>");
@@ -49,7 +53,7 @@
 //     $("#results").append("<p>You can see the results if you click the button that says 'Click Here' in the challenge section. I also decided to change the section backgrounds to test out other button functions. </p>");
 // });
 
-//TASK X: BONUS
+// //TASK X: BONUS
 $("#challenge, #problems, #results").addClass("special-sections");
 
 $(".special-sections").append("<button class='toggle-button'>Click Here!</button>");
