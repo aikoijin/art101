@@ -19,7 +19,7 @@ const sentences = [
   "Service Error 409: The subscriber you are trying to reach has blocked all incoming text messages from this number.",
   "Error: Your SMS has not been delivered: The recipient has blocked you. Please, try again after 24 hours.",
   "Error 65487 346: Your message failed to send to this recipient. Please try again later or visit www.stoptextingme.com.",
-  "Free Msg. Service: Unable to send the message. The recipient has activated message blocking."
+  "Free Msg. Service: Unable to send the message. The recipient has activated message blocking.",
 ];
 
 function randReply() {
