@@ -3,7 +3,7 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 #content {
   margin: auto;
-  width: 60%;
+  width: 90%;
   padding: 10px;
   border: solid 3px pink;
   background-color: #ffffff;
@@ -14,22 +14,26 @@
 #output {
   background-color: white;
   margin: 10px auto;
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
   border: solid 1px black;
   min-height: 100px;
+}
+
+#output p {
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif
 }
 
 .text-left {
   display: inline-block;
   max-width: 60%;
   margin: 3px;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 15px;
   background-color: darkgray;
   color: white;
-  font-family: sans-serif;
-  font-size: 0.8em;
+  font-size: 5px;
   float: left;
   clear: both;
 }
@@ -38,11 +42,10 @@
   display: inline-block;
   max-width: 60%;
   margin: 3px;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 15px;
   background-color: #147efb;
   color: white;
-  font-family: sans-serif;
   font-size: 0.8em;
   float: right;
   clear: both;
