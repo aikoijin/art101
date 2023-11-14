@@ -74,5 +74,5 @@ $(".special-sections button").one('click', function(){
     }
 
     // appends a new paragraph to the parent section when clicked
-    $(this).parent().append("<p>" + paragraphText + "</p>");
+    $(this).parent().html("<p>" + paragraphText + "</p>");
 });
