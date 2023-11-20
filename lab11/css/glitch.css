@@ -31,3 +31,10 @@ h1 {
 span#words {
     font-weight: bolder;
 }
+
+.glitch {
+  position: fixed;
+  top: 600px;
+  right: -10px;
+  max-height: 100px;
+}
