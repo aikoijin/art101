@@ -1,0 +1,33 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 150px;
+}
+/* Changing Text every 3 Seconds credit: https://blog.stackfindover.com/how-to-change-text-every-3-seconds */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.container {
+    width: 95%;
+    max-width: 1160px;
+    margin: auto;
+}
+.animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1 {
+    color: white;
+    font-weight: 500;
+}
+span#words {
+    font-weight: bolder;
+}
