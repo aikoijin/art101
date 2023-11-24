@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 11 - JavaScript Events and Forms</title>
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 11 - JavaScript Events and Forms</h1>
+			<div id="challenge">
+					<h2>Challenge</h2>
+					<p> The challenge of this lab was to use jQuery to create a form in which the input was the user's name
+						and after submitting, you get an anagram of the name.
+					</p>
+			</div>
+
+			<div id="problems">
+					<h2>Problems</h2>
+					<p> Some problems that arose during this lab was trying to get the anagram to print/work as I copied
+						the code from my Lab 7 since I did the anagram for that. However, having the example during class definitely helped
+						and I got the anagram to work after rewatching the lecture. In addition, I wanted to make the anagram Capitalize
+						so I had to do some digging and research on the web to implent that.  
+					</p>
+			</div>
+
+			<div id="results">
+					<h2>Results</h2>
+					<p> Press the button below to change the greeting!
+					</p>
+			</div>
+			<div id ="output"></div>
+				<!--Class Notes 11/17-->
+			<h1 id = "title">Hello World!</h1>
+			<input type ="text" id = "input"><br>
+			<br><button id ="my-button" class = "my-button">Submit!</button>
+		</section>
+	</main>
+
+	<div class = "home">
+        <p><a href="../index.html">BACK TO HOMEPAGE</a>
+    </div>
+
+</body>
+</html>

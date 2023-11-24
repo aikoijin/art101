@@ -50,6 +50,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: auto;

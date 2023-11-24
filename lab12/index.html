@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 12 - Conditionals</title>
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+
+<body class = "harryp">
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 12 - Conditionals</h1>
+			<div id="challenge">
+					<h2>Challenge</h2>
+					<p> The challenge of this lab was to use create a function that depends on conditionals to sort the user into a house.
+					</p>
+			</div>
+
+			<div id="problems">
+					<h2>Problems</h2>
+					<p> A problem that arose during this lab was understanding how the sorting hat function worked to assign a house to the user.
+						I put mod = # instead of mod == # so it did not compare but assigned the variable as a number.  
+					</p>
+			</div>
+
+			<div id="results">
+					<h2>Results</h2>
+			</div>
+			<br>
+			<div id ="input-output"></div>
+			<h2 id = "hogwarts">Welcome to Hogwarts</h2>
+			<p id = "sort">Press the button below to be sorted into your house! <br>
+				For a more accurate assignment, please enter your <b>FULL</b> name for sorting: </p>
+			<input type ="text" id = "input"><br>
+			<div id ="output"><button id ="my-button" class = "my-button">Submit!</button></div>
+			<br>
+			<div id = "retry"></div>
+		</section>
+	</main>
+
+	<div class = "linkbox">
+			<p><a class ="homelink" href="../index.html"> << Back Home</a>
+			<a class= "sourcelink" href="js/lab.js"> Javascript >></a></p>
+    </div>
+</body>
+</html>

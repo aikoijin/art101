@@ -1,0 +1,98 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+#content {
+  margin: auto;
+  width: 65%;
+  padding: 10px;
+  border: solid 3px #ffcc04;
+  background-color: #ffffff;
+  height:auto;
+  overflow:auto;
+}
+
+#content h2{
+  padding: 0px;
+  margin: 0px;
+}
+
+#content p{
+  padding: 0px;
+  margin: 3px;
+  font-size: 15px;
+}
+
+#output p {
+  font-size: 10px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.harryp {
+  background-image: url(https://images6.alphacoders.com/130/1305167.jpg);
+  background-size: cover;
+}
+
+.my-button {
+  background-color: #bebebe;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 5px;
+  margin: 0px;
+}
+
+#title{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "HarryPotter";
+  src: url("../HarryPotter.ttf") format("truetype")
+  }
+
+#sort{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+#hogwarts{
+  margin: 0px;
+  padding: 0px;
+  font-size: 95px;
+  text-align: center;
+  font-family:"HarryPotter"
+}
+
+#output {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+#input {
+  display:block; 
+  margin: auto;
+  margin-top:10px;
+}
+
+.linkbox {
+  padding: 5px;
+  font-size: 80%;
+}
+.homelink {
+  text-align: left;
+  position: relative;
+  left: 260px;
+  font-size: 20px;
+  font-family: "HarryPotter";
+  color: white;
+}
+.sourcelink {
+  float: right;
+  position: relative;
+  right: 260px;
+  font-size: 20px;
+  font-family: "HarryPotter";
+  color: white;
+}
