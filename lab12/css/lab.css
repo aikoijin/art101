@@ -3,8 +3,8 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 #content {
   margin: auto;
-  width: 65%;
-  padding: 10px;
+  width: 70%;
+  padding: 15px;
   border: solid 3px #ffcc04;
   background-color: #ffffff;
   height:auto;
