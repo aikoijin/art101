@@ -1,0 +1,99 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+#content {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  margin-top: 2.5%;
+  border: solid 5px #ff0000;
+  background-color: #f8eadc;
+  border-radius: 0px;
+}
+
+.wallpaper {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/364fc4dd-59ca-4b2c-86ff-9d8e42dff048/d2n4hgl-75f97c05-b04f-49e2-9d93-df3e840da691.jpg);
+  background-color: steelblue;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+@font-face {
+  font-family: "pokemon";
+  src: url("../Pokemon Hollow.ttf") format("truetype")
+  }
+
+  @font-face {
+    font-family: "pokemons";
+    src: url("../Pokemon Solid.ttf") format("truetype")
+    }
+
+h1{
+  font-family:"pokemon";
+  font-size: 30px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.activate{
+  background-image: https://www.pngmart.com/files/2/Pokeball-PNG-Photos.png;
+}
+
+h2 {
+  font-family:"pokemon";
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+h3 {
+  font-family:"Gill Sans";
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+
+}
+
+.output2 p {
+  font-family: "Consolas";
+  text-align: center;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.linkbox {
+  padding: 5px;
+  font-size: 80%;
+}
+
+.homelink {
+  text-align: left;
+  position: relative;
+  left: -430px;
+  font-size: 20px;
+  font-family:"Gill Sans";
+  color: white;
+}
+.sourcelink {
+  float: right;
+  position: relative;
+  right: 210px;
+  font-size: 20px;
+  font-family:"Gill Sans";
+  color: white;
+}

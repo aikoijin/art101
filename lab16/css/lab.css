@@ -1,0 +1,48 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+#content {
+  margin: auto;
+  width: 65%;
+  padding: 15px;
+  border: solid 3px greenyellow;
+  background-color: #ffffff;
+  border-radius: 0px;
+  height:auto;
+  overflow:auto;
+}
+
+.debug {
+  background-image: url(https://wallpapers.com/images/hd4/binary-code-code-numbers-green-glow-agx3h70ga36galq2.jpg);
+  background-size: cover;
+}
+
+.output div {
+  background-color: black;
+  color: #149414;
+  font-family: "Consolas";
+  width: fit-content;
+  font-size: medium;
+  padding: 5px;
+}
+
+.linkbox {
+  padding: 5px;
+  font-size: 80%;
+}
+.homelink {
+  text-align: left;
+  position: relative;
+  left: 250px;
+  color: white;
+  font-family:"Consolas";
+  font-weight: bolder;
+}
+.sourcelink {
+  float: right;
+  position: relative;
+  right: 250px;
+  color: white;
+  font-family:"Consolas";
+  font-weight: bolder;
+}
