@@ -7,7 +7,7 @@
    Date: December 3rd, 2023
 */
 
-//Choose Your Pokemon!
+// //Choose Your Pokemon!
 document.getElementById('activate').addEventListener('click', function() {
   var randomPokemon = Math.floor(Math.random() * 898) + 1;
   fetch(`https://pokeapi.co/api/v2/pokemon/${randomPokemon}`)

@@ -2,7 +2,7 @@
 <html>
 <head>
     <!-- This title is used for tabs and bookmarks -->
-    <title>Lab 14 - Debugging Tools and Strategies</title>
+    <title>Lab 16 - JSON and APIs (XKCD comic!)</title>
     <!-- Use UTF character set, a good idea with any webpage -->
       <meta charset="UTF-8" />
     <!-- Set viewport so page remains consistently scaled w narrow devices -->
@@ -17,50 +17,33 @@
     <script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
 
-<body class = "debug">
+<body class = "wallpaper">
     <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
     <main id="content">
-        <section>
-            <h1>Lab 14 - Debugging Tools and Strategies</h1>
+        <section id = "text">
+            <h1>Lab 16 - JSON and APIs (XKCD comic!)</h1>
             <div id="challenge">
                     <h2>Challenge</h2>
-                    <p>The challenge of this lab was to debug any errors of our previous labs. Due to the lack of debugging we needed to do,
-                        we decided to try our hand at Task X: Bonus by adding breakpoints via console.log and then trying to answer
-                        some questions on Stackoverflow.
+                    <p>The challenge of this lab was to make a webpage hosting XKCD comics with a previous and next button for the Task X.
                     </p>
             </div>
 
             <div id="problems">
                     <h2>Problems</h2>
-                    <p>We found the lab to be relatively easy and did not have any labs to debug however, we decided to add breakpoints
-                        so that we can see our code running correctly. We also decided to answer some questions in Stackoverflow.
+                    <p>One problem was getting the endpoint url as we had no idea how to get the url to work. We figured out that we needed a
+                      number generator to choose a random comic but didn't really know how to get that to work. We tried to do some psuedocode
+                      to help understand what we wanted to do and it helped us get some code down.
                     </p>
             </div>
 
-            <div id="output">
+            <div id="results">
                     <h2>Results</h2>
-                    <p>We decided to help: <a href="https://stackoverflow.com/questions/77515397/why-cannot-i-print-the-data-inside-a-div-container">Shudip Sharma</a> answer their question.
-						<br><img src="img/question.png" height = 250px alt = "Question">
-                    </p>
             </div>
 
-            <div id="debug">
-                <h2>Debugging</h2>
-                <p>We did not have any lab that needed debugging so we decided to proceed to Task X.
-                    Answer: To display the array data within the div container, you would have to target the div by its "id". 
-                    For example, wherever you are displaying the joke, add an id attribute to the div. So it could look like this:
-                    div class="minor-section" id="jokes". Then in the JavaScript file, you would have to replace "jokes-result" with "jokes" inside the getElementbyId() function.
-                    So it would look like this instead, "document.getElementById("jokes").innerHTML = "Joke For Today is: " + b + " Joke Number: " + a;"
-                </p>
-                <img src="img/answer.png" height = 250px alt = "Question">
-			
 			<div class="output">
-				<h2>Script Output</h2>
-				<div class="output">
-                    <div id="jokes-result"></div>
-				</div>
-			</div>
-        </div>
+        <button id="get-em">Generate me a comic!</button>
+        <div id ="output"></div>
+      </div>
         </section>
     </main>
 

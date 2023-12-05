@@ -3,27 +3,79 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 #content {
   margin: auto;
-  width: 65%;
-  padding: 15px;
-  border: solid 3px greenyellow;
+  width: 50%;
+  padding: 10px;
+  border: solid 3px steelblue;
   background-color: #ffffff;
   border-radius: 0px;
   height:auto;
   overflow:auto;
 }
 
-.debug {
-  background-image: url(https://wallpapers.com/images/hd4/binary-code-code-numbers-green-glow-agx3h70ga36galq2.jpg);
-  background-size: cover;
+#text {
+  text-align: center;
 }
 
-.output div {
-  background-color: black;
-  color: #149414;
-  font-family: "Consolas";
-  width: fit-content;
-  font-size: medium;
-  padding: 5px;
+#text h1{
+  text-align: center;
+}
+
+.wallpaper {
+  background-image: url(https://wallpapers.com/images/featured/black-and-white-comic-syylxu4dsw0d63r7.jpg);
+  background-color: slategray;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.output h2 {
+  font-family: "Gill Sans";
+  padding-left: 10px;
+  text-align: center;
+}
+
+.output img {
+  padding-left:10px;
+  width: 30%;
+  display: block;
+  margin: auto;
+  padding: auto;
+}
+
+@font-face {
+  font-family: "font";
+  src: url("../LaPicaDemo-LaPicaDemo.otf") format("opentype")
+  }
+
+h1 {
+  font-family: "font";
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-family: "font";
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0px;
+  text-align: center;
+}
+
+p {
+  font-family: "Gill Sans";
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  text-align:center;
+}
+
+.output{
+  text-align: center;
+}
+
+#results{
+  text-align: center;
+  margin-top:10px;
 }
 
 .linkbox {
@@ -33,16 +85,16 @@
 .homelink {
   text-align: left;
   position: relative;
-  left: 250px;
+  left: 370px;
   color: white;
-  font-family:"Consolas";
+  font-family:"font";
   font-weight: bolder;
 }
 .sourcelink {
   float: right;
   position: relative;
-  right: 250px;
+  right: 370px;
   color: white;
-  font-family:"Consolas";
+  font-family:"font";
   font-weight: bolder;
 }

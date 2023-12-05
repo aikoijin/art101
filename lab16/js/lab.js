@@ -1,22 +1,88 @@
 /*
-   lab.js - Debugging StackOverflow question by adding breakpoints and solving the issue.
+   lab.js - Using XKCD API, importing comics into our webpage.
 
    Requirements: jQuery must be loaded for this script to work.
 
-   Author: Ashley Pham
-   Date: Nov 25 2023
+   Author: Michelle Wang
+   Date: December 4, 2023
 */
-let jokes = [
-  //We filled the array with random jokes since the OP did not disclose the jokes
-  "Why did the chicken cross the road?",
-  "What falls, but never needs a bandage?",
-  "Why did the egg hide?",
-  "Why couldn't the sunflower ride its bike?",
-  "Why do we tell actors to 'break a leg?'",
-  "What do you call a pig that does karate?",
-]
 
-let length = jokes.length - 1;
-let a = Math.floor(Math.random() * length);
-let b = jokes[a];
-document.getElementById("jokes-result").innerHTML = "Joke For Today is: " + b + "<br> Joke Number: " + a;
+
+const ENDPOINT = "https://xkcd.com/614/info.0.json";
+// const APIKEY = "/info.0.json"
+
+// add button event listener
+$("#get-em").click(function(){
+  
+	// construct ajax object
+	const ajaxParams = {
+	  url: ENDPOINT,
+	  // data: {api_key: APIKEY},
+	  type: "GET",
+	  dataType: "json",
+    success: ajaxSuccess,
+    error: ajaxError
+	}
+
+  $.ajax(ajaxParams);
+})
+
+function ajaxSuccess(comicObj){
+	  console.log("Here's what I got:", comicObj)
+    const title = comicObj.title;
+    const imageURL = comicObj.img;
+    const imageALT = comicObj.alt;
+    const number = comicObj.num;
+    const desc = comicObj.transcript;
+
+    //jQuery
+    $("#output").append("<h2>" + +number + ": " + title); //614: Woodpecker
+
+    $("#output").append("<img src ='" + imageURL + "'title ='"+ imageALT + "'>"); //image + alt text
+
+    $("#output").append("<p>" + desc); //A man with a beret and a woman are standing on a boardwalk, leaning on a handrail...
+}
+
+function ajaxError(request,error){
+	  console.log("Oops:", request, error)
+}
+
+
+//------------------------------------------------------------
+
+// //NOTES 12/4
+// const ENDPOINT = "https://api.nasa.gov/planetary/apod";
+// const APIKEY = "7RN20QVubWidrhG9gyoBUuk0m8eLjzF8lYXCF4Co";
+
+// // add button event listener
+// $("#get-em").click(function(){
+  
+// 	// construct ajax object
+// 	const ajaxParams = {
+// 	  url: ENDPOINT,
+// 	  data: {api_key: APIKEY},
+// 	  type: "GET",
+// 	  dataType: "json",
+//     success: ajaxSuccess,
+//     error: ajaxError
+// 	}
+
+//   $.ajax(ajaxParams);
+// })
+
+// function ajaxSuccess(data){
+// 	  console.log("Here's what I got:", data)
+//     const title = data.title;
+//     const desc = data.explanation;
+//     const imageURL = data.url;
+//     //jQuery
+//     $("#output").append("<h2>" + title);
+
+//     $("#output").append("<img src ='" + imageURL + "'/>");
+
+//     $("#output").append("<p>" + desc);
+// }
+
+// function ajaxError(request,error){
+// 	  console.log("Oops:", request, error)
+// }
