@@ -6,10 +6,9 @@
   width: 50%;
   padding: 10px;
   border: solid 3px steelblue;
-  background-color: #ffffff;
-  border-radius: 0px;
   height:auto;
   overflow:auto;
+  background: rgba(255, 255, 255, 0.8)
 }
 
 #text {
@@ -62,7 +61,7 @@ h2 {
 }
 
 p {
-  font-family: "Gill Sans";
+  font-family: "Source Sans Pro";
   font-size: 15px;
   margin: 0px;
   padding: 0px;
@@ -76,6 +75,31 @@ p {
 #results{
   text-align: center;
   margin-top:10px;
+}
+
+button{
+  font-family: "font";
+  border:solid 3px black;
+  border-radius: 5px;
+  background-color:whitesmoke;
+  color:black;
+  padding:5px;
+}
+
+#prev{
+  font-family: "Fjalla One";
+  background-color:crimson;
+  border:solid 3px rgb(129, 12, 35);
+  color:white;
+  padding:5px;
+}
+
+#next{
+  font-family: "Fjalla One";
+  background-color:forestgreen;
+  border:solid 3px rgb(20, 82, 20);
+  color:white;
+  padding:5px;
 }
 
 .linkbox {
