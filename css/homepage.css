@@ -1,36 +1,40 @@
 /* this css file will only style the homepage of our site */
 
-body {
-  background-color: lavender;
+.wallpaper {
+  background-image: url(../t1bg.jpg);
+  background-size: cover;
+  background-position: top right;
 }
 
 #content {
-  background-color: white;
-  border-radius: 10px;
+  margin-top: 50px;
+  width: fit-content;
+  padding: 10px;
+  border: solid 3px  #e2012d;
+  background: rgba(255, 255, 255, 0.8)
 }
 
 .pfp-photo {
   margin: 20px;
-  float: right;
-  max-width: 300px;
-  border-radius: 10px;
+  float: left;
+  max-height: 300px;
 }
 
 .lab-links {
   float: right;
-  margin-right: 30px;
-  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .lab {
   float: left;
-  margin-left: -20px;
+  margin-top: -19px;
 }
 
 .bio {
   margin-left: 20px;
   max-width: 300px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp */

@@ -3,22 +3,19 @@ we can use a single css file to style all the files in our wwebsite
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
-body {
-  background-color: #f4f4f4;
-}
 
 @font-face {
-  font-family: "LoversQuarrel";
-  src: url("../lab2/LoversQuarrel.ttf") format("truetype")
+  font-family: "Yellowtail";
+  src: url("../Header.ttf") format("truetype")
   }
 @font-face {
-  font-family: "BriosoPro";
-  src: url("../lab2/BriosoPro.ttf") format("truetype")
+  font-family: "Fjalla One";
+  src: url("../Subheader.ttf") format("truetype")
   }
 
 @font-face {
-  font-family: "Aviano";
-  src: url("../lab2/Aviano.ttf") format("truetype")
+  font-family: "Source Sans Pro";
+  src: url("../Paragraph.ttf") format("truetype")
   }
 
 @font-face {
@@ -28,7 +25,7 @@ body {
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1{
-  font-family: "Aviano";
+  font-family: "Yellowtail";
   word-spacing: 5px;
   font-size: 30px;
   margin: 0px;
@@ -36,21 +33,22 @@ h1{
 }
 
 h2{
-  font-family: "BELL";
+  font-family: "Fjalla One";
   font-size: 20px;
   margin: 0px;
   padding: 0px;
 }
 
 p{
-  font-family: "BriosoPro";
-  font-size: 20px;
-  margin: 0px;
+  font-family: "Source Sans Pro";
+  font-size: 15px;
+  margin: 5px;
   padding: 0px;
 }
 
 a {
-  color: plum;
+  color: #e2012d;
+  font-family: "Source Sans Pro";
   text-decoration: none;
 }
 
@@ -66,7 +64,6 @@ a:hover {
   padding: 10px;
   border: solid 3px pink;
   background-color: #ffffff;
-  border-radius: 20px;
 }
 
 .home {
@@ -76,7 +73,7 @@ a:hover {
   height:50px;
   }
 
-body {
+/* body {
   background-color: lavender;
-}
+} */
 
